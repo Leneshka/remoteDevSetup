@@ -52,6 +52,25 @@ vagrantfile:
                     auto: 'true'
                 owner: www-data
                 group: www-data
+            vflsf_sfe4ngpsmq3n:
+                source: ./codeSnifferStandards
+                target: /usr/share/php/PHP/CodeSniffer/Standards/
+                sync_type: default
+                smb:
+                    smb_host: ''
+                    smb_username: ''
+                    smb_password: ''
+                rsync:
+                    args:
+                        - '--verbose'
+                        - '--archive'
+                        - '-z'
+                    exclude:
+                        - .vagrant/
+                        - .git/
+                    auto: 'true'
+                owner: www-data
+                group: www-data
         usable_port_range:
             start: 10200
             stop: 10500
@@ -69,7 +88,8 @@ vagrantfile:
         host: detect
 server:
     install: '1'
-    packages: {  }
+    packages:
+        - php-codesniffer
 users_groups:
     install: '1'
     groups: {  }
