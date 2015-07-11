@@ -19,3 +19,7 @@ Also phpcs' standard directory `/usr/share/php/PHP/CodeSniffer/Standards/` is sh
 So start the machine with `vagrant up` and be a happy user. Use `vagrant halt` when you can't achieve more happiness this way.
 
 Once you've changed `config.yaml`, use `vagrant provision` to reload settings.
+
+
+
+This remote machine may be ised with Drupal plugin from this [repo](https://github.com/Leneshka/DrupalDemoModule), see README for instructions.
