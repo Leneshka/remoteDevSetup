@@ -22,4 +22,10 @@ Once you've changed `config.yaml`, use `vagrant provision` to reload settings.
 
 
 
-This remote machine may be ised with Drupal plugin from this [repo](https://github.com/Leneshka/DrupalDemoModule), see README for instructions.
+This remote machine may be used with Drupal plugin from this [repo](https://github.com/Leneshka/DrupalDemoModule), see README for instructions.
+
+
+
+**Troubleshooting**
+
+Please note that directories in `./codeSnifferStandard` other than `Drupal` block `phpcs` installation, so please delete them before restarting vagrant.
