@@ -90,6 +90,7 @@ server:
     install: '1'
     packages:
         - php-codesniffer
+        - drush
 users_groups:
     install: '1'
     groups: {  }
