@@ -26,6 +26,7 @@ This remote machine may be used with Drupal plugin from this [repo](https://gith
 
 
 
-**Troubleshooting**
+**Important**
 
-Please note that directories in `./codeSnifferStandard` other than `Drupal` block `phpcs` installation, so please delete them before restarting vagrant.
+Please note that directories in `./codeSnifferStandard` block `phpcs` installation, so please delete them before restarting vagrant,
+and copy `.Drupal` into `./codeSnifferStandard` after vagrant is up.
